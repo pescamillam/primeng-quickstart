@@ -7,13 +7,24 @@
     <link rel="stylesheet" type="text/css" href="app/resources/icons/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="app/resources/primeui.css" />
 
-    <!-- 1. Load libraries -->
-    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
+      <!-- 1. Load libraries -->
+      <!-- IE required polyfills, in this exact order -->
+      <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+      <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
 
-    <script src="app/resources/jquery.js"></script>
-    <script src="app/resources/jquery-ui.js"></script>
-    <script src="app/resources/primeui.js"></script>
+      <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+      <script src="node_modules/systemjs/dist/system.src.js"></script>
+      <script src="node_modules/rxjs/bundles/Rx.js"></script>
+      <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+      <script src="node_modules/angular2/bundles/router.dev.js"></script>
+      <script src="node_modules/angular2/bundles/http.dev.js"></script>
+
+      <script src="https://cdn.rawgit.com/primefaces/primeng/master/showcase/resources/js/jquery.js"></script>
+      <script src="https://cdn.rawgit.com/primefaces/primeng/master/showcase/resources/js/jquery-ui.js"></script>
+      <script src="https://cdn.rawgit.com/primefaces/primeng/master/showcase/resources/js/prism.js" data-manual></script>
+      <script src="https://cdn.rawgit.com/primefaces/primeng/master/showcase/resources/primeui/primeui.js"></script>
+      <script src="https://cdn.rawgit.com/primefaces/primeng/master/showcase/resources/js/charts.min.js"></script>
+      <script src="https://cdn.rawgit.com/primefaces/primeng/master/showcase/resources/js/site.js"></script>
 
     <!-- 2. Configure SystemJS -->
     <script>
